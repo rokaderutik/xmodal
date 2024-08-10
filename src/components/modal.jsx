@@ -46,7 +46,9 @@ export default function ModalComp() {
             <h1>User Details Modal</h1>
             <button onClick={() => setIsOpen(true)}>Open Form</button>
 
-            <Modal 
+            {
+                isOpen &&
+                <Modal 
                 open={isOpen} 
                 onClose={() => setIsOpen(false)}
                 className="modal"
@@ -91,6 +93,7 @@ export default function ModalComp() {
                     </form>
                 </div>
             </Modal>
+            }
            
         </div>
     );
