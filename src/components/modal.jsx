@@ -42,13 +42,14 @@ export default function ModalComp() {
     }
 
     return (
-        <div className="modal">
+        <div className="outer">
             <h1>User Details Modal</h1>
             <button onClick={() => setIsOpen(true)}>Open Form</button>
 
             <Modal 
                 open={isOpen} 
                 onClose={() => setIsOpen(false)}
+                className="modal"
             >
                 <div className="modal-content">
                     <form onSubmit={handleSubmit}>
