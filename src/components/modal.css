@@ -21,6 +21,9 @@ button {
     background-color: #fff;
     border: 1px solid black;
     box-sizing: border-box;
+    position: fixed;
+    left: 25%;
+    top: 20%;
 }
 
 h4 {
